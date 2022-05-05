@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int numero1 = 0, numero2, resultado = 0, opcao = 0;
+        int numero1, numero2, resultado = 0, opcao = 0;
         char operador;
         boolean verificarOperacao;
         ArrayList<String> historico = new ArrayList<>();
@@ -64,10 +64,10 @@ public class Main {
                         System.out.println("\nHistórico das operações:");
                         historico.forEach(System.out::println);
 
-                        /*historico.forEach(itemHistorico -> System.out.println(itemHistorico));*/
-                    /*for (String s : historico) {
-                        System.out.println(s);
-                    }*/
+                        /*historico.forEach(itemHistorico -> System.out.println(itemHistorico));
+                        for (String s : historico) {
+                            System.out.println(s);
+                        }*/
                     } else {
                         System.out.println("\nNenhum histórico de operações!");
                     }
